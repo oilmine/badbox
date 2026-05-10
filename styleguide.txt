@@ -1,2 +1,0 @@
-1. Always put return 0; at the end of the program.
-2. If there are any error cases, put return 1;
