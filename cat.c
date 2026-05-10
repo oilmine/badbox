@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    char buffer[1024];
+    char buffer[1024] = {0};
     char *pFileName = argv[1];
     FILE *pFile = fopen(pFileName, "r");
     
