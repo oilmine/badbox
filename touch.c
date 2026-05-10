@@ -7,10 +7,11 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    FILE *pFile = fopen(argv[1], "w");
+    FILE *pFile = fopen(argv[1], "");
     if (pFile == NULL) {
         return 1;
     }
 
     fclose(pFile);
+    return 0;
 }

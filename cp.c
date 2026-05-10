@@ -25,4 +25,6 @@ int main(int argc, char *argv[]) {
 
     fclose(pSFile);
     fclose(pDFile);
+    
+    return 0;
 }
