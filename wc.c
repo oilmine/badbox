@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
         if (count == '\n') {
             lines++;
         }
-
+        
         if (isspace(count)) {
             inWord = 0;
         } else if (!inWord) {

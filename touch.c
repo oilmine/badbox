@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    FILE *pFile = fopen(argv[1], "");
+    FILE *pFile = fopen(argv[1], "w");
     if (pFile == NULL) {
         return 1;
     }

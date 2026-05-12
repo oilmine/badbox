@@ -1,15 +1,14 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(int argc, char *argv[]) {
     if (argv[1] == NULL) {
-        while (1) {
+        while (true) {
             printf("\ny");
         }
-    }
-    
-    if (argv[1] != NULL) {
-        while (1) {
+    } else {
+        while (true) {
             printf("%s\n", argv[1]);
         }
-    }   
+    }
 }
