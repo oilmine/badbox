@@ -6,6 +6,7 @@ int main(int argc, char *argv[]) {
     
     if (argc < 3) {
         fprintf(stderr, "Usage: grep [TEXT] [FILE]");
+        return 1;
     }
 
     char buffer[1024] = {0};
@@ -26,12 +27,13 @@ int main(int argc, char *argv[]) {
             printf("%d: %s", lc, buffer);
             found = 1;
         }
-
+        
         lc++;
     }
 
     if (!found) {
-        printf("doesnt work\n");
+        printf("Text not in file.\n");
+        return 1;
     }
 
     fclose(pFile);

@@ -4,6 +4,7 @@
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         fprintf(stderr, "Usage: cp [SOURCE] [DESTINATION]");
+        return 1;
     }
 
     char buffer[1024] = {0};
