@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        fprintf(stderr, "File not specified.\n");
+        fprintf(stderr, "Usage: wc [FILE]\n");
         return 1;
     }
 

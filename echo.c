@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        fprintf(stderr, "Not enough arguments.");
+        fprintf(stderr, "Usage: echo [TEXT]");
         return 1;
     }
 

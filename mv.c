@@ -4,11 +4,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        printf("File not specified.\n");
-        return 1;
-    }
-    if (argc < 3) {
-        printf("Destination not specified.\n");
+        fprintf(stderr, "Usage: mv [SOURCE] [DESTINATION]");
         return 1;
     }
 

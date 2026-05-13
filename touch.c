@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        printf("File not specified.\n");
+        fprintf(stderr, "Usage: touch [FILENAME]");
         return 1;
     }
 

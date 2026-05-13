@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        fprintf(stderr, "File not specified.");
+        fprintf(stderr, "Usage: cat [FILE]");
         return 1;
     }
 
